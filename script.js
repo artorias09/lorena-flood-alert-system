@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  /* ---------- Header muda de estilo ao rolar ---------- */
+  /* ---------- Header muda de estilo qnd rolar ---------- */
   const header = document.getElementById('site-header');
   const onScroll = () => {
     if (window.scrollY > 12) {
@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     revealTargets.forEach((el) => observer.observe(el));
   } else {
-    // Fallback: mostra tudo direto, sem animação
+  
     revealTargets.forEach((el) => el.classList.add('in-view'));
   }
 
